@@ -9,15 +9,15 @@
     <Grid>
         <GroupBox Header="Rodzaj przesyłki" FontSize="16" Margin="26,25,608,291">
             <StackPanel>
-                <RadioButton x:Name="pocztowka" Content="Pocztówka" HorizontalAlignment="Left" FontSize="16" Margin="20,10,0,0" Height="20" Checked="RadioButton_Checked"/>
-                <RadioButton x:Name="list" Content="List" HorizontalAlignment="Left" Margin="20,0,0,0" FontSize="16" Height="20" Checked="list_Checked" />
+                <RadioButton x:Name="pocztowka" Content="Pocztówka" HorizontalAlignment="Left" FontSize="16" Margin="20,10,0,0" Height="20"/>
+                <RadioButton x:Name="list" Content="List" HorizontalAlignment="Left" Margin="20,0,0,0" FontSize="16" Height="20" />
                 <RadioButton x:Name="paczka" Content="Paczka" HorizontalAlignment="Left" Margin="20,0,0,0" FontSize="16" Height="20" />
 
             </StackPanel>
         </GroupBox>
         <Button Content="Sprawdź cenę" FontSize="16" HorizontalAlignment="Left" Margin="40,159,0,0" VerticalAlignment="Top" Width="136" Click="Button_Click"/>
         <TextBox x:Name="cena"   HorizontalAlignment="Left" Margin="174,228,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="20" Text="Cena: " VerticalAlignment="Top" Width="120"/>
-        <Image x:Name="zdj" HorizontalAlignment="Left" Height="100" Margin="40,205,0,0" VerticalAlignment="Top" Width="100" Source="/list.png"/>
+        <Image x:Name="zdj" HorizontalAlignment="Left" Height="100" Margin="40,205,0,0" VerticalAlignment="Top" Width="100" Source="/list1.png"/>
         <GroupBox Header="Dane adresowe" Margin="371,34,80,177">
             <StackPanel HorizontalAlignment="Left">
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Ulica z numerem" Width="163"/>

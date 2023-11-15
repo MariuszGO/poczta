@@ -25,15 +25,12 @@ namespace poczta
             InitializeComponent();
         }
 
-        private void RadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Uri postcardImg = new Uri("list.png", UriKind.Relative);
-            Uri letterImg = new Uri("list1.png", UriKind.Relative);
+            Uri letterImg = new Uri("list1.jpg", UriKind.Relative);
             Uri packageImg = new Uri("list2.png", UriKind.Relative);
 
             if (pocztowka.IsChecked == true)
@@ -76,10 +73,7 @@ namespace poczta
 
         }
 
-        private void list_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
     }
     
 }

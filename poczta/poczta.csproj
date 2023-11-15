@@ -9,10 +9,16 @@
 
   <ItemGroup>
     <None Remove="list.png" />
+    <None Remove="list1.jpg" />
+    <None Remove="list1.png" />
+    <None Remove="list2.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="list.png" />
+    <Resource Include="list1.jpg" />
+    <Resource Include="list1.png" />
+    <Resource Include="list2.png" />
   </ItemGroup>
 
 </Project>
