@@ -35,23 +35,23 @@ namespace poczta
 
             if (pocztowka.IsChecked == true)
             {
-                cena.Text = "Cena: 1zł";
-                zdj.Source = new BitmapImage(postcardImg);
+                cena.Text = cena.Text + "1zł";
+                zdjecie.Source = new BitmapImage(postcardImg);
             }
             if (list.IsChecked == true)
             {
                 cena.Text = "Cena: 1,5zł";
-                zdj.Source = new BitmapImage(letterImg);
+                zdjecie.Source = new BitmapImage(letterImg);
             }
             if (paczka.IsChecked == true)
             {
                 cena.Text = "Cena: 10zł";
-                zdj.Source = new BitmapImage(packageImg);
+                zdjecie.Source = new BitmapImage(packageImg);
             }
 
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void FunkcjaZatwierdz(object sender, RoutedEventArgs e)
         {
             string postalCode = kod.Text;
             if (postalCode.Length == 5)

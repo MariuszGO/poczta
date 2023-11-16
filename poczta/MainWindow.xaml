@@ -7,26 +7,37 @@
         mc:Ignorable="d"
         Title="Nadaj przesyłkę, PESEL: numer PESEL" Height="450" Width="800">
     <Grid>
-        <GroupBox Header="Rodzaj przesyłki" FontSize="16" Margin="26,25,608,291">
+        <GroupBox Header="Rodzaj przesyłki" FontSize="16" Margin="10,10,608,291">
             <StackPanel>
-                <RadioButton x:Name="pocztowka" Content="Pocztówka" HorizontalAlignment="Left" FontSize="16" Margin="20,10,0,0" Height="20"/>
-                <RadioButton x:Name="list" Content="List" HorizontalAlignment="Left" Margin="20,0,0,0" FontSize="16" Height="20" />
-                <RadioButton x:Name="paczka" Content="Paczka" HorizontalAlignment="Left" Margin="20,0,0,0" FontSize="16" Height="20" />
+                <RadioButton x:Name="pocztowka" Content="Pocztówka" HorizontalAlignment="Left" FontSize="16" Margin="20,10,0,5" Height="20" IsChecked="True"/>
+                <RadioButton x:Name="list" Content="List" HorizontalAlignment="Left" Margin="20,0,0,5" FontSize="16" Height="20" />
+                <RadioButton x:Name="paczka" Content="Paczka" HorizontalAlignment="Left" Margin="20,0,0,5" FontSize="16" Height="20" />
 
             </StackPanel>
         </GroupBox>
-        <Button Content="Sprawdź cenę" FontSize="16" HorizontalAlignment="Left" Margin="40,159,0,0" VerticalAlignment="Top" Width="136" Click="Button_Click"/>
+        <Button Content="Sprawdź cenę" FontSize="16" HorizontalAlignment="Left" Margin="20,159,0,0" VerticalAlignment="Top" Width="172" Click="Button_Click"/>
         <TextBox x:Name="cena"   HorizontalAlignment="Left" Margin="174,228,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="20" Text="Cena: " VerticalAlignment="Top" Width="120"/>
-        <Image x:Name="zdj" HorizontalAlignment="Left" Height="100" Margin="40,205,0,0" VerticalAlignment="Top" Width="100" Source="/list1.png"/>
-        <GroupBox Header="Dane adresowe" Margin="371,34,80,177">
-            <StackPanel HorizontalAlignment="Left">
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Ulica z numerem" Width="163"/>
-                <TextBox x:Name="ulica" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Wpisz ulicę" Width="120" Height="27"/>
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Kod pocztowy" Width="163"/>
-                <TextBox x:Name="kod" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Wpisz kod" Width="120" Height="27"/>
+        <Image x:Name="zdjecie" HorizontalAlignment="Left" Height="100" Margin="40,205,0,0" VerticalAlignment="Top" Width="100" Source="/list.png"/>
+        <GroupBox Header="Dane adresowe" Margin="371,10,80,177">
+            <StackPanel HorizontalAlignment="Left" Width="330">
+                <TextBlock HorizontalAlignment="Left" Margin="20,5,5,5" TextWrapping="Wrap" Text="Ulica z numerem" Width="138"/>
+                <TextBox x:Name="ulica" HorizontalAlignment="Left" Margin="20,5,5,5" TextWrapping="Wrap" Text="" Width="295" Height="27"/>
+                <TextBlock HorizontalAlignment="Left" Margin="20,5,5,5" TextWrapping="Wrap" Text="Kod pocztowy" Width="163"/>
+                <TextBox x:Name="kod" HorizontalAlignment="Left" Margin="20,5,5,5"  TextWrapping="Wrap" Text="" Width="120" Height="27"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="20,5,5,5" Text="Miasto" Width="163"/>
+                <TextBox x:Name="miasto" HorizontalAlignment="Left"  TextWrapping="Wrap" Margin="20,5,5,5" Text="" Width="295" Height="27"/>
 
             </StackPanel>
         </GroupBox>
-        <Button Content="Zatwierdz" HorizontalAlignment="Left" Margin="419,337,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Button Content="Zatwierdz" HorizontalAlignment="Left" Margin="40,337,0,0" VerticalAlignment="Top" Click="FunkcjaZatwierdz" Width="723" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.028"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
     </Grid>
 </Window>
